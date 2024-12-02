@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-TrainersConnect/Pods-TrainersConnect-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Signals/Signals.framework
+${BUILT_PRODUCTS_DIR}/SwiftySensors/SwiftySensors.framework
+${BUILT_PRODUCTS_DIR}/SwiftySensorsTrainers/SwiftySensorsTrainers.framework

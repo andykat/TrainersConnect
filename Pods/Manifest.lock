@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.10.2)
+  - Signals (6.1.0)
+  - SwiftySensors (1.1.0):
+    - Signals
+    - SwiftySensors/Serializers (= 1.1.0)
+  - SwiftySensors/Serializers (1.1.0):
+    - Signals
+  - SwiftySensorsTrainers (1.1.0):
+    - Signals
+    - SwiftySensors
+
+DEPENDENCIES:
+  - Alamofire (~> 5.10.1)
+  - Signals
+  - SwiftySensors (from `https://github.com/kinetic-fit/sensors-swift`)
+  - SwiftySensorsTrainers
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Signals
+    - SwiftySensorsTrainers
+
+EXTERNAL SOURCES:
+  SwiftySensors:
+    :git: https://github.com/kinetic-fit/sensors-swift
+
+CHECKOUT OPTIONS:
+  SwiftySensors:
+    :commit: 334b9a4636501bc10daae26ecef23dd667fc3054
+    :git: https://github.com/kinetic-fit/sensors-swift
+
+SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  Signals: f8e5c979e93c35273f8dfe55ee7f47213d3e8fe8
+  SwiftySensors: be27d516028b76adbdccf37474768e7a418d0db1
+  SwiftySensorsTrainers: fb54a81bbc82f87617df6cd98acb8d9172f4187c
+
+PODFILE CHECKSUM: f8dd75daf1241f5c49d828ad44e3b4364a977bea
+
+COCOAPODS: 1.16.2
