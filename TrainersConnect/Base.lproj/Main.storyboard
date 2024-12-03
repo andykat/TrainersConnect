@@ -113,7 +113,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmO-Hr-Pix">
-                                <rect key="frame" x="175" y="696" width="37" height="21"/>
+                                <rect key="frame" x="145" y="696" width="98" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -137,11 +137,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="OXu-ks-au8"/>
                     <connections>
-                        <outlet property="ResistanceSlider" destination="6WN-RT-gky" id="nQz-De-pcG"/>
                         <outlet property="connectButton" destination="1H6-Xh-c2m" id="Vwr-Nu-7WW"/>
                         <outlet property="nameLabel" destination="I9a-2l-dy7" id="NAp-a7-0Fe"/>
-                        <outlet property="resistanceLabel" destination="6WN-RT-gky" id="iVO-Xg-uLH"/>
-                        <outlet property="resistanceSlider" destination="6WN-RT-gky" id="Mfi-bt-abh"/>
+                        <outlet property="resistanceLabel" destination="OmO-Hr-Pix" id="w8r-Ny-1hb"/>
+                        <outlet property="resistanceSlider" destination="40x-lm-G4s" id="C5g-5y-gHc"/>
                         <outlet property="tableView" destination="eKB-xL-csm" id="0bL-hy-6NR"/>
                     </connections>
                 </viewController>

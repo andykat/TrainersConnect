@@ -38,7 +38,8 @@ class SensorDetailsViewController: UIViewController {
 //        CyclingPowerService.WahooTrainer.setResistanceMode(<#T##self: CyclingPowerService.WahooTrainer##CyclingPowerService.WahooTrainer#>)
         
         res = resistanceSlider.value
-        resistanceLabel.text = "\(res)"
+        let formatted = String(format: "%.2f", res)
+        resistanceLabel.text = formatted
         
         if let wahooTrainer = cyclingPowerService.wahooTrainer {
            wahooTrainer.setResistanceMode(resistance: res)
