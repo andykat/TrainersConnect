@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8ECDBF6A2CFE71E200146AE2 /* SensorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDBF692CFE71E100146AE2 /* SensorDetailsViewController.swift */; };
+		8ECDBF6C2CFEAB8A00146AE2 /* ServiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDBF6B2CFEAB8A00146AE2 /* ServiceDetailsViewController.swift */; };
 		8ED0DEE02CFD349400573695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED0DEDF2CFD349400573695 /* AppDelegate.swift */; };
 		8ED0DEE22CFD349400573695 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED0DEE12CFD349400573695 /* SceneDelegate.swift */; };
 		8ED0DEE72CFD349400573695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED0DEE52CFD349400573695 /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		773464BBD632E089E4DFB0EA /* Pods-TrainersConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainersConnect.release.xcconfig"; path = "Target Support Files/Pods-TrainersConnect/Pods-TrainersConnect.release.xcconfig"; sourceTree = "<group>"; };
+		8ECDBF692CFE71E100146AE2 /* SensorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDetailsViewController.swift; sourceTree = "<group>"; };
+		8ECDBF6B2CFEAB8A00146AE2 /* ServiceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsViewController.swift; sourceTree = "<group>"; };
 		8ED0DEDC2CFD349400573695 /* TrainersConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainersConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED0DEDF2CFD349400573695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ED0DEE12CFD349400573695 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				8ED0DEED2CFD349600573695 /* LaunchScreen.storyboard */,
 				8ED0DEF02CFD349600573695 /* Info.plist */,
 				8ED0DEE82CFD349400573695 /* TrainersConnect.xcdatamodeld */,
+				8ECDBF692CFE71E100146AE2 /* SensorDetailsViewController.swift */,
+				8ECDBF6B2CFEAB8A00146AE2 /* ServiceDetailsViewController.swift */,
 			);
 			path = TrainersConnect;
 			sourceTree = "<group>";
@@ -333,10 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECDBF6A2CFE71E200146AE2 /* SensorDetailsViewController.swift in Sources */,
 				8ED0DEE02CFD349400573695 /* AppDelegate.swift in Sources */,
 				8ED0DEEA2CFD349400573695 /* TrainersConnect.xcdatamodeld in Sources */,
 				8ED0DF152CFD40CB00573695 /* SensorListViewController.swift in Sources */,
 				8ED0DEE22CFD349400573695 /* SceneDelegate.swift in Sources */,
+				8ECDBF6C2CFEAB8A00146AE2 /* ServiceDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

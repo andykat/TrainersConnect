@@ -33,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SensorManager.logSensorMessage = { message in
             print(message)
         }
-        print("started")
         return true
     }
 

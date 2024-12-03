@@ -9,6 +9,8 @@
 
 import UIKit
 import SwiftySensors
+import SwiftySensorsTrainers
+import CoreBluetooth
 
 class SensorListViewController: UITableViewController {
     
@@ -16,7 +18,6 @@ class SensorListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         SensorManager.instance.onSensorDiscovered.subscribe(with: self) { [weak self] sensor in
             guard let s = self else { return }
             print("found sensor")
@@ -45,12 +46,12 @@ class SensorListViewController: UITableViewController {
         return sensorCell
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let sensorDetails = segue.destination as? SensorDetailsViewController {
-//            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-//            if indexPath.row >= sensors.count { return }
-//            sensorDetails.sensor = sensors[indexPath.row]
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let sensorDetails = segue.destination as? SensorDetailsViewController {
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            if indexPath.row >= sensors.count { return }
+            sensorDetails.sensor = sensors[indexPath.row]
+        }
+    }
     
 }
