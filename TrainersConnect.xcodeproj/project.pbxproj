@@ -20,6 +20,7 @@
 		8ED0DF062CFD349600573695 /* TrainersConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED0DF052CFD349600573695 /* TrainersConnectUITestsLaunchTests.swift */; };
 		8ED0DF132CFD34AF00573695 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8ED0DF122CFD34AF00573695 /* Podfile */; };
 		8ED0DF152CFD40CB00573695 /* SensorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED0DF142CFD40CB00573695 /* SensorListViewController.swift */; };
+		8EEC599C2D0E94A500149616 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC599B2D0E94A500149616 /* MainViewController.swift */; };
 		E2A0ABF583CCADEBE77F166E /* Pods_TrainersConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36D1B21D42FA29616EF82FA /* Pods_TrainersConnect.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		8ED0DF052CFD349600573695 /* TrainersConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainersConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8ED0DF122CFD34AF00573695 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		8ED0DF142CFD40CB00573695 /* SensorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorListViewController.swift; sourceTree = "<group>"; };
+		8EEC599B2D0E94A500149616 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B28849E5A30AA09EDE9598C3 /* Pods-TrainersConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainersConnect.debug.xcconfig"; path = "Target Support Files/Pods-TrainersConnect/Pods-TrainersConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		B36D1B21D42FA29616EF82FA /* Pods_TrainersConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainersConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 				8ED0DEE12CFD349400573695 /* SceneDelegate.swift */,
 				8ED0DEE52CFD349400573695 /* Main.storyboard */,
 				8ED0DF142CFD40CB00573695 /* SensorListViewController.swift */,
+				8EEC599B2D0E94A500149616 /* MainViewController.swift */,
 				8ED0DEEB2CFD349600573695 /* Assets.xcassets */,
 				8ED0DEED2CFD349600573695 /* LaunchScreen.storyboard */,
 				8ED0DEF02CFD349600573695 /* Info.plist */,
@@ -339,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EEC599C2D0E94A500149616 /* MainViewController.swift in Sources */,
 				8ECDBF6A2CFE71E200146AE2 /* SensorDetailsViewController.swift in Sources */,
 				8ED0DEE02CFD349400573695 /* AppDelegate.swift in Sources */,
 				8ED0DEEA2CFD349400573695 /* TrainersConnect.xcdatamodeld in Sources */,
@@ -534,6 +538,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrainersConnect/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Multi Trainer Control";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -564,6 +569,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TrainersConnect/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Multi Trainer Control";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

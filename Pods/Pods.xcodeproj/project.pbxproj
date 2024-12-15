@@ -246,14 +246,14 @@
 		8D32ACFFF1C195D28191B0726956029C /* Pods-TrainersConnect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TrainersConnect.modulemap"; sourceTree = "<group>"; };
 		8E2D2B446606D3C8079D9372EE6C87B6 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/Features/RequestInterceptor.swift; sourceTree = "<group>"; };
 		8ED0E80BC83C50AEBCA8E517D8355229 /* WebSocketRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketRequest.swift; path = Source/Core/WebSocketRequest.swift; sourceTree = "<group>"; };
-		904E3727F232516B76EF01AEB05FBCDB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Source/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		904E3727F232516B76EF01AEB05FBCDB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Source/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		90613C8A608920FFEE570E60C45A0A6E /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/Core/HTTPHeaders.swift; sourceTree = "<group>"; };
 		917A4E0CA1619D9F05D157BF6A4E700B /* KineticSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KineticSDK.h; path = Headers/KineticSDK.h; sourceTree = "<group>"; };
 		9292F2EF7C5AD0443BE67CD8C2CF972C /* SwiftySensorsTrainers-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySensorsTrainers-prefix.pch"; sourceTree = "<group>"; };
 		9454D08D21F2202511000DD4A5F70037 /* SwiftySensorsTrainers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySensorsTrainers-umbrella.h"; sourceTree = "<group>"; };
 		95EFCB59347A2768B018542DB2948307 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/Extensions/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		9858C9725D59349930223ACE13899DEA /* HeartRateSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeartRateSerializer.swift; path = Sources/SwiftySensors/HeartRateSerializer.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		A0247A9598ED8790D2EBF29AEE1C7A74 /* Pods-TrainersConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrainersConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		A21C50D0E6FE2C821030CE22D071F78C /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
 		A4859789C7B0BC9EDCA22EAF69594DA7 /* JetBlackService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JetBlackService.swift; path = Source/JetBlackService.swift; sourceTree = "<group>"; };
@@ -439,7 +439,6 @@
 				1E13DBE06A222D3DE0E6BC88FC0C8069 /* Service.swift */,
 				0D1DD74CC3AF54D219164B2C44E639EC /* Support Files */,
 			);
-			name = SwiftySensors;
 			path = SwiftySensors;
 			sourceTree = "<group>";
 		};
@@ -513,7 +512,6 @@
 				115E0E7E9EA5FACD8417318FFB5DFD71 /* Frameworks */,
 				082B21198226866F3C9C35B78E39C421 /* Support Files */,
 			);
-			name = SwiftySensorsTrainers;
 			path = SwiftySensorsTrainers;
 			sourceTree = "<group>";
 		};
@@ -565,7 +563,6 @@
 				4719A62BFB4B309381524E69F108651D /* Resources */,
 				367E9517ED67C5FD321887A5E0EDB088 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -624,7 +621,6 @@
 				D3AEC2405E5EF5BCC76347F00AF80867 /* UIControl+Signals.swift */,
 				C02FB793C28BA3E5D1DB38D2993A4180 /* Support Files */,
 			);
-			name = Signals;
 			path = Signals;
 			sourceTree = "<group>";
 		};
@@ -810,8 +806,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 6BD90983F210438F5F019793EDCCAB3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
