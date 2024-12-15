@@ -10,8 +10,6 @@ import UIKit
 import SwiftySensors
 import SwiftySensorsTrainers
 class MainViewController: UIViewController {
-    
-//    var sensor: Sensor!
     var res: Float = 1.0
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var connectButton: UIButton!
@@ -20,11 +18,8 @@ class MainViewController: UIViewController {
     @IBOutlet var resistanceLabel: UILabel!
     @IBOutlet var resistanceSlider: UISlider!
     var connection = "disconnected"
-//    fileprivate var services: [Service] = []
     
     fileprivate var sensors: [Sensor] = []
-    var sensorCount: [Int] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         SensorManager.instance.onSensorDiscovered.subscribe(with: self) { [weak self] sensor in
@@ -32,16 +27,9 @@ class MainViewController: UIViewController {
             print("found sensor")
             if !s.sensors.contains(sensor) {
                 s.sensors.append(sensor)
-                s.sensorCount.append(0)
                 s.tableView.reloadData()
             }
         }
-//        sensor.onServiceDiscovered.subscribe(with: self) { [weak self] sensor, service in
-//            self?.rebuildData()
-//        }
-//        sensor.onStateChanged.subscribe(with: self) { [weak self] sensor in
-//            self?.updateConnectButton()
-//        }
     }
     
     @IBAction func sliderValueChanged(_ sender: Any) {
@@ -52,9 +40,10 @@ class MainViewController: UIViewController {
 
         //update resistance to all connected bikes
         for s in sensors {
+            //checks if the trainer has cyclingpowerservice active
             guard let cyclingPowerService: CyclingPowerService = s.service() else { return }
             
-            
+            //sets new resistance on trainer
             if let wahooTrainer = cyclingPowerService.wahooTrainer {
                 wahooTrainer.setResistanceMode(resistance: res)
             }
@@ -63,8 +52,7 @@ class MainViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-//        nameLabel.text = sensor.peripheral.name
+        //refresh all the UI
         sensors = SensorManager.instance.sensors
         updateConnectButton()
         
@@ -77,21 +65,6 @@ class MainViewController: UIViewController {
     }
     
     fileprivate func updateConnectButton() {
-//        switch sensor.peripheral.state {
-//        case .connected:
-//            connectButton.setTitle("Connected", for: UIControl.State())
-//            connectButton.isEnabled = true
-//            CyclingPowerService.WahooTrainer.activate()
-//        case .connecting:
-//            connectButton.setTitle("Connecting", for: UIControl.State())
-//            connectButton.isEnabled = false
-//        case .disconnected:
-//            connectButton.setTitle("Disconnected", for: UIControl.State())
-//            connectButton.isEnabled = true
-//            rebuildData()
-//        case .disconnecting:
-//            connectButton.setTitle("Disconnecting", for: UIControl.State())
-//            connectButton.isEnabled = false
         switch connection {
             case "disconnected":
                 connectButton.setTitle("Disconnected", for: UIControl.State())
@@ -116,28 +89,24 @@ class MainViewController: UIViewController {
                 print("\(String(describing: s.peripheral.name)) connected")
             }
         }
+        if connection == "connected" {
+            connection = "disconnected"
+        }
+        else {
+            connection = "connected"
+        }
+        updateConnectButton()
+        
+        //needs to be run before using cycling
         CyclingPowerService.WahooTrainer.activate()
-//        if sensor.peripheral.state == .connected {
-//            SensorManager.instance.disconnectFromSensor(sensor)
-//        } else if sensor.peripheral.state == .disconnected {
-//            SensorManager.instance.connectToSensor(sensor)
-////            CyclingPowerService.WahooTrainer.activate()
-//        }
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let serviceDetails = segue.destination as? ServiceDetailsViewController {
-//            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-//            if indexPath.row >= services.count { return }
-//            serviceDetails.service = services[indexPath.row]
-//        }
-//    }
 }
 
 
 
 extension MainViewController: UITableViewDataSource {
     
+    //UI for a row of the table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let trainerCell = tableView.dequeueReusableCell(withIdentifier: "TrainerCell")!
         let sensor = sensors[indexPath.row]
@@ -147,7 +116,6 @@ extension MainViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return services.count
         return sensors.count
     }
     
